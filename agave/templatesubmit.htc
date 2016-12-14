@@ -1,0 +1,16 @@
+verse = docker
+docker_image = cyverseuk/renseq:v0.2.3
+
+output = sra-tools.out
+error = sra-tools.err
+log = sra-tools.log
+
+request_memory = 12G
+request_cpus = 1
+
+should_transfer_files = YES
+transfer_input_files = /mnt/data/teatree/sra-tools/Seq_names.txt
+when_to_transfer_output = ON_EXIT
+transfer_output_files = output/
+
+
