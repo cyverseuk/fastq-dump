@@ -1,14 +1,15 @@
-# Docker container for SRAToolKit developed by NCBI Genbank/SRA team.
-# Toolkit VERSION 2.8.0
+# Docker container for SRA-toolkit developed by NCBI Genbank/SRA team.
+# update to toolkit VERSION 2.8.0
 
 # Pull base image.
 FROM ubuntu:14.04.4
 
-# :)
-MAINTAINER Tazro Inutano Ohta, inutano@gmail.com
+
+MAINTAINER Annemarie Eckes Annemarie.Eckes@earlham.ac.uk
+#Dockerfile partially taken from Tazro Inutano Ohta, inutano@gmail.com, and expanded.
 
 # clone repo
-WORKDIR /src
+WORKDIR /tmp
 ENV VERSION 2.8.0
 
 RUN  apt update
@@ -19,10 +20,9 @@ RUN  cp -r sratoolkit.${VERSION}-ubuntu64/bin/* /usr/bin
 
 
 COPY runFastqDump.sh /tmp/runFastqDump.sh
-#RUN /tmp/runFastqDump.sh
+RUN /tmp/runFastqDump.sh
 
 
 # Default command
 WORKDIR /data
 CMD ["bash"]
-#ENTRYPOINT ["\Users\hildegaa\Documents\CyVerse\Sequence_download\test\sra-toolkit\runFastqDump.sh"]
