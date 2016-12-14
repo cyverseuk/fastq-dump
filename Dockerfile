@@ -19,8 +19,8 @@ RUN  tar zxfv sratoolkit.${VERSION}-ubuntu64.tar.gz
 RUN  cp -r sratoolkit.${VERSION}-ubuntu64/bin/* /usr/bin
 
 
-COPY runFastqDump.sh /tmp/runFastqDump.sh
-RUN /tmp/runFastqDump.sh
+# COPY runFastqDump.sh /tmp/runFastqDump.sh
+# RUN /tmp/runFastqDump.sh
 
 
 # Default command
