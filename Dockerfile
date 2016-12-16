@@ -24,5 +24,5 @@ RUN  cp -r sratoolkit.${VERSION}-ubuntu64/bin/* /usr/bin
 
 
 # Default command
-WORKDIR /data
+WORKDIR /tmp
 CMD ["bash"]
