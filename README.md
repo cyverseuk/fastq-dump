@@ -1,6 +1,15 @@
 # A Dockerfile for downloading NCBI SRA Toolkit
--supposed to be downloading a pre-defined list of accessions for subsequent
-analysis within Cyverse.
 
+example command
+``` 
+docker run teatree/sra-toolkit <SRA-tool specific commands>  
+```
+example command for sra-tool to retrieve the sequence from SRR3130488 (8 MB) in .sra format.
+
+```
+docker run teatree/sra-toolkit prefetch SRR3130448
+```
+
+for commands see:
 
 See [github.com/ncbi/sra-tools/wiki](https://github.com/ncbi/sra-tools/wiki/) for more details.
