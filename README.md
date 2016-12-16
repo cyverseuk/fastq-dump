@@ -2,12 +2,12 @@
 
 example command
 ``` 
-docker run teatree/sra-toolkit <SRA-tool specific commands>  
+docker run cyverseuk/sra-toolkit <SRA-tool specific commands>  
 ```
 example command for sra-tool to retrieve the sequence from SRR3130488 (8 MB) in .sra format.
 
 ```
-docker run teatree/sra-toolkit prefetch SRR3130448
+docker run cyverseuk/sra-toolkit prefetch SRR3130448
 ```
 
 for commands see:
