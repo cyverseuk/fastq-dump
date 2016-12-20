@@ -1,6 +1,7 @@
 {
-  "name"          : "sra-tools",
-  "label"         : "sra-toolkit",
+  "name"          : "fastq-dump",
+  "appId"         : "fastq-dump-0.0.0",
+  "label"         : "fastq-dump",
   "version"       : "0.0.0",
   "executionType" : "CLI",
 
