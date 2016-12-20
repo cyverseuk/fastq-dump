@@ -2,7 +2,7 @@
 
 example command
 ``` 
-docker run cyverseuk/sra-toolkit <path/to/doc/with/SRR-identifiers.txt>  
+docker run cyverseuk/fastq-dump <path/to/doc/with/SRR-identifiers.txt>  
 ```
 for command details see:
 
