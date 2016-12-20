@@ -6,7 +6,7 @@ INPUT_1="${input_1}"
 
 cp fastq_dump_submit.htc condorsubmit.htc
 echo transfer_input_files = $INPUT_1 >> fastq_dump_submit.htc
-echo arguments = prefetch $INPUT_1 >> fastq_dump_submit.htc
+#echo arguments = $INPUT_1 >> fastq_dump_submit.htc
 
 #H5COMMA=`echo ${h5} | sed -e 's/ /,/g'`
 #echo transfer_input_files = ${adapters},$H5COMMA >> sratools_submit.htc
