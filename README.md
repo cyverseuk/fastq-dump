@@ -1,8 +1,8 @@
-# A Dockerfile for downloading NCBI SRA Toolkit
+# A Dockerfile for performing the fastq-dump command,which is part of the NCBI SRA Toolkit
 
 example command
 ``` 
-docker run cyverseuk/sra-toolkit <SRA-tool specific commands>  
+docker run cyverseuk/sra-toolkit <path/to/doc/with/SRR-identifiers.txt>  
 ```
 example command for sra-tool to retrieve the sequence from SRR3130488 (8 MB) in .sra format.
 
