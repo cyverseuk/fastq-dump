@@ -21,8 +21,9 @@
   "inputs" : [ {
       "id": "input_1",
       "details" : {
-        "label": "list of SRA Sequence IDs",
+        "label": "file with list of SRA Sequence IDs",
         "description": "list of SRA Sequence identifiers (SRR)"
+        "argument":null
       },
       "value": {
         "required" : "true",
@@ -34,5 +35,13 @@
 	"maxCardinality": -1
       }
     }
-  ]
+  ],
+  "outputs":[{
+      "id":".sra,fastq"
+      },
+      "details":{
+        "description" : "possible output files when using sra-tools, depending on the user command ",
+        "argument" : null
+
+  }]
 }
