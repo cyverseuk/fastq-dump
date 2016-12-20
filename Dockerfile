@@ -7,7 +7,7 @@ FROM ubuntu:14.04.4
 MAINTAINER Annemarie Eckes, Annemarie.Eckes@earlham.ac.uk
 
 # clone repo
-WORKDIR /src
+WORKDIR .
 ENV VERSION 2.8.0
 
 RUN  apt update
@@ -22,5 +22,5 @@ RUN /tmp/runFastqDump.sh
 
 
 # Default command
-WORKDIR /data
+WORKDIR /tmp
 CMD ["bash"]
