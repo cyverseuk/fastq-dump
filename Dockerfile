@@ -22,5 +22,5 @@ RUN /tmp/runFastqDump.sh
 
 
 # Default command
-WORKDIR /tmp
+WORKDIR .
 CMD ["bash"]
