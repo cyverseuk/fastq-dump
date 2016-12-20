@@ -23,7 +23,6 @@
       "details" : {
         "label": "file with list of SRA Sequence IDs",
         "description": "list of SRA Sequence identifiers (SRR)"
-        "argument":null
       },
       "value": {
         "required" : "true",
