@@ -34,13 +34,5 @@
 	"maxCardinality": -1
       }
     }
-  ],
-  "outputs":[{
-      "id":".sra,fastq"
-      },
-      "details":{
-        "description" : "possible output files when using sra-tools, depending on the user command ",
-        "argument" : null
-
-  }]
+  ]
 }
