@@ -18,7 +18,7 @@ RUN  cp -r sratoolkit.${VERSION}-ubuntu64/bin/* /usr/bin
 
 #run fastq-dump specific script
 COPY runFastqDump.sh /tmp/runFastqDump.sh
-COPY Seq_names.txt /tmp/Seq_names.txt
+#COPY Seq_names.txt /tmp/Seq_names.txt
 
 RUN chmod +x /tmp/runFastqDump.sh   #to remove permission error
 RUN /tmp/runFastqDump.sh
