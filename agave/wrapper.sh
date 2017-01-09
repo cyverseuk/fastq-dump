@@ -11,7 +11,7 @@ mv $filename Seq_names.txt
 cp fastq_dump_submit.htc condorsubmit.htc
 echo transfer_input_files = $Seq_names >> fastq_dump_submit.htc
 echo arguments = ${Seq_names.txt}  >> fastq_dump_submit.htc
-echo arguments
+
 #H5COMMA=`echo ${h5} | sed -e 's/ /,/g'`
 #echo transfer_input_files = ${adapters},$H5COMMA >> sratools_submit.htc
 echo queue >> fastq_dump_submit.htc
