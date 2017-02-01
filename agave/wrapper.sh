@@ -6,11 +6,14 @@ Seq_names="${input_1}"
 fullfilename=$Seq_names
 filename=$(basename "$fullfilename")
 echo $filename
-mv $filename Seq_names.txt
+
+
+#mv $filename Seq_names.txt
+
 
 cp fastq_dump_submit.htc condorsubmit.htc
 echo transfer_input_files = $Seq_names >> fastq_dump_submit.htc
-echo arguments = ${Seq_names.txt}  >> fastq_dump_submit.htc
+echo arguments = $filename  >> fastq_dump_submit.htc
 
 #H5COMMA=`echo ${h5} | sed -e 's/ /,/g'`
 #echo transfer_input_files = ${adapters},$H5COMMA >> sratools_submit.htc
@@ -23,6 +26,6 @@ jobid=`echo $jobid | sed -e 's/\.//'`
 #echo $jobid
 
 #echo going to monitor job $jobid
-condor_tail -f $jobid
+condor_tail -f $jobid"
 
 exit 0

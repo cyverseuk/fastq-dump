@@ -1,7 +1,7 @@
 {
   "name"          : "fastq-dump",
   "label"         : "fastq-dump",
-  "appID"         : "fastq-dump-0.0.0",
+  "appID"         : "",
   "archive"       : "true",
   "version"       : "0.0.0",
   "executionType" : "CLI",
@@ -9,7 +9,7 @@
   "checkpointable"   : true,
   "executionSystem"  : "cyverseUK-Batch2",
   "deploymentSystem" : "cyverseUK-Storage2",
-  "deploymentPath"   : "fastq-dump/agave",
+  "deploymentPath"   : "apps/fastq-dump/agave",
   "templatePath"     : "wrapper.sh",
   "testPath"         : "wrapper.sh",
   "parallelism"      : "SERIAL",
@@ -30,7 +30,7 @@
       },
       "value": {
         "required" : "true",
-        "default" : "agave://data.iplantcollaborative.org/home/teatree/appexamples/Seq_names.txt",
+        "default" : "agave://data.iplantcollaborative.org/teatree/appexamples/Seq_names.txt",
         "visible":true
       },
       "semantics": {

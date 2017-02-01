@@ -9,6 +9,5 @@ request_memory = 12G
 request_cpus = 1
 
 should_transfer_files = YES
-
 when_to_transfer_output = ON_EXIT
-transfer_output_files = analysis/SRA_sequences
+transfer_output_files = SRA_download
