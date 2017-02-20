@@ -26,6 +26,6 @@ jobid=`echo $jobid | sed -e 's/\.//'`
 #echo $jobid
 
 #echo going to monitor job $jobid
-condor_tail -f $jobid"
+condor_tail -f $jobid
 
 exit 0
