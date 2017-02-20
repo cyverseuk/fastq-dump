@@ -3,14 +3,13 @@
 
 echo "creating output dir"
 mkdir SRA_download
-
+cd SRA_download
 cp ../Seq_names.txt .
 
 while read line;
-do
-#retrieve sequences
-echo "retrieving $line from SRA"
-fastq-dump $line --outdir SRA_download;
-done < tmp/Seq_names.txt
+##retrieve sequences
+do echo "retrieving $line from SRA"
+fastq-dump $line  --outdir .;
+done <Seq_names.txt
 
 #-v "$(pwd)":/data -w /data
