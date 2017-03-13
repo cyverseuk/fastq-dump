@@ -21,6 +21,7 @@
 
   "tags": [ "testing"],
   "ontology": [ ],
+  "tags": [ "CyverseUK" ],
 
   "inputs" : [ {
       "id": "input_1",
