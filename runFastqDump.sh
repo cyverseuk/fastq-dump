@@ -4,7 +4,7 @@ ls
 echo "creating output dir"
 mkdir SRA_download
 cd SRA_download
-cp ../$1 .
+mv ../$1 .
 
 while read line
 ##retrieve sequences

@@ -2,18 +2,15 @@
 
 
 Seq_names="${input_1}"
-#ADAPTERS="${adapters}"
-fullfilename=$Seq_names
-filename=$(basename "$fullfilename")
-echo $filename
 
 
 #mv $filename Seq_names.txt
 
 
 cp fastq_dump_submit.htc condorsubmit.htc
-echo transfer_input_files = $Seq_names >> condorsubmit.htc
-echo arguments = $filename  >> condorsubmit.htc
+echo transfer_input_files = ${input_1} >> condorsubmit.htc
+echo arguments = ${input_1}  >> condorsubmit.htc
+
 
 #H5COMMA=`echo ${h5} | sed -e 's/ /,/g'`
 #echo transfer_input_files = ${adapters},$H5COMMA >> sratools_submit.htc

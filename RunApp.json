@@ -1,0 +1,8 @@
+{
+  "name"    : "fastq-dump",
+  "appId"   : "fastq-dump-0.0.0",
+  "archive" : "true",
+  "inputs": {
+    "input_1"   : "agave://data.iplantcollaborative.org/teatree/appexamples/Seq_names.txt"
+  }
+}
