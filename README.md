@@ -16,7 +16,7 @@ SRR636598
 
 *This Docker Image is also used in context with the AGAVE API and CyVerseUK, so that the output can be integrated into further CyVerse workflows*
 
-#### User Instructions when using with CyVerse
+#### User Instructions when using this image with CyVerse
 You don't need to pull this image, Condor will do this in the background for you.
 You need to have a [CyVerse](https://user.cyverse.org/) and a [BIP](https://bip.earlham.ac.uk/) account, downloaded the [cyverse-sdk client](https://github.com/cyverse/cyverse-sdk) (optional, but makes querying easier) and you must have created a RunApp.json, containing the following minimal information:
 
