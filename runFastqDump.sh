@@ -1,15 +1,14 @@
 #!/bin/bash
 
-ls
 echo "creating output dir"
-mkdir SRA_download
-cd SRA_download
-mv ../$1 .
+mkdir ../SRA_download
+
+cd /tmp/
 
 while read line
 ##retrieve sequences
 do echo "retrieving $line from SRA"
-fastq-dump $line  --outdir .
-done <$1
+fastq-dump.2.8.0 $line  --outdir ../SRA_download/
+done < *.txt
 
 #-v "$(pwd)":/data -w /data

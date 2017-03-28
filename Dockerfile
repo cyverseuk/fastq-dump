@@ -17,10 +17,10 @@ RUN  tar zxfv sratoolkit.${VERSION}-ubuntu64.tar.gz
 RUN  cp -r sratoolkit.${VERSION}-ubuntu64/bin/* /usr/bin
 
 #run fastq-dump specific script
-COPY runFastqDump.sh /tmp/runFastqDump.sh
+ADD runFastqDump.sh /usr/bin/runFastqDump.sh
 
-WORKDIR /tmp
 
-RUN chmod +x runFastqDump.sh   #to remove permission error
+RUN chmod +x /usr/bin/runFastqDump.sh   #to remove permission error
 
-ENTRYPOINT ["/tmp/runFastqDump.sh"]
+
+ENTRYPOINT ["/usr/bin/runFastqDump.sh"]
