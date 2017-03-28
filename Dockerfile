@@ -20,7 +20,7 @@ RUN  cp -r sratoolkit.${VERSION}-ubuntu64/bin/* /usr/bin
 ADD runFastqDump.sh /usr/bin/runFastqDump.sh
 
 
-RUN chmod +x /usr/bin/runFastqDump.sh   #to remove permission error
+RUN chmod 777 /usr/bin/runFastqDump.sh   #to remove permission error
 
 
 ENTRYPOINT ["/usr/bin/runFastqDump.sh"]
