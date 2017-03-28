@@ -1,5 +1,5 @@
 universe = docker
-docker_image = cyverseuk/fastq-dump:v0.0.7
+docker_image = cyverseuk/fastq-dump:v0.0.9
 
 output = sra-tools.out
 error = sra-tools.err
