@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "creating output dir"
-mkdir ../SRA_download
+mkdir SRA_download
 
 cd /tmp/
 
