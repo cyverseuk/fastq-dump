@@ -7,7 +7,7 @@ FROM ubuntu:14.04.4
 MAINTAINER Annemarie Eckes, Annemarie.Eckes@earlham.ac.uk
 
 # clone repo
-WORKDIR .
+WORKDIR /usr/bin/
 ENV VERSION 2.8.0
 
 RUN  apt update

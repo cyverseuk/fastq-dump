@@ -2,9 +2,12 @@
 
 echo "creating output dir"
 mkdir SRA_download
-
+ls
+pwd
 cd /tmp/
-
+echo "creating output dir2"
+ls
+pwd
 while read line
 ##retrieve sequences
 do echo "retrieving $line from SRA"
