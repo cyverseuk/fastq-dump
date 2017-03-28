@@ -9,9 +9,9 @@ for command details see:
 See [SRA Toolkit Documentation: fastq-dump](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=toolkit_doc&f=fastq-dump) for more details.
 
 filenamewithSeqIDs.txt should include one sequence ID per line like so:
-SRR636596
-SRR636597
-SRR636598
+SRR636596 \n
+SRR636597 \n
+SRR636598 \n
 
 *This Docker Image is also used in context with the AGAVE API and CyVerseUK, so that the output can be integrated into further CyVerse workflows*
 
@@ -22,10 +22,10 @@ You need to have a [CyVerse](https://user.cyverse.org/) and a [BIP](https://bip.
 
         {
                 "name"    : "fastq-dump",
-                "appId"   : "fastq-dump-0.0.0",
+                "appId"   : "fastq-dump-0.0.1",
                 "archive" : "true",
                 "inputs": {
-                "input_1"   : "agave://data.iplantcollaborative.org/your_home_folder/path/to/filenamewithSeqIDs.txt"
+                "input_1"   : "agave://data.iplantcollaborative.org/<your_home_folder/path/to/filenamewithSeqIDs.txt>"
               }
             }
 
