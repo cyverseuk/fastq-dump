@@ -21,6 +21,6 @@ ADD runFastqDump.sh /usr/bin/runFastqDump.sh
 
 
 RUN chmod 777 /usr/bin/runFastqDump.sh   #to remove permission error
-
+WORKDIR /tmp
 
 ENTRYPOINT ["/usr/bin/runFastqDump.sh"]
