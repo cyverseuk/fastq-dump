@@ -7,7 +7,7 @@ FROM ubuntu:14.04.4
 MAINTAINER Annemarie Eckes, Annemarie.Eckes@earlham.ac.uk
 
 # clone repo
-WORKDIR /usr/bin/
+WORKDIR .
 ENV VERSION 2.8.0
 
 RUN  apt update
@@ -21,6 +21,6 @@ ADD runFastqDump.sh /usr/bin/runFastqDump.sh
 
 
 RUN chmod 777 /usr/bin/runFastqDump.sh   #to remove permission error
-WORKDIR /tmp
 
-ENTRYPOINT ["/usr/bin/runFastqDump.sh"]
+WORKDIR /tmp/
+ENTRYPOINT ["runFastqDump.sh"]
