@@ -8,7 +8,7 @@ for command details see:
 
 See [SRA Toolkit Documentation: fastq-dump](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=toolkit_doc&f=fastq-dump) for more details.
 
-filenamewithSeqIDs.txt should include one sequence ID per line like so:
+filenamewithSeqIDs.txt should include one sequence ID per line like so:  
 SRR636596  
 SRR636597  
 SRR636598  
