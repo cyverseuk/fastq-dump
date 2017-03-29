@@ -3,7 +3,7 @@
   "label"         : "fastq-dump",
   "appID"         : "",
   "archive"       : "true",
-  "version"       : "0.0.0",
+  "version"       : "0.0.1",
   "executionType" : "CLI",
 
   "checkpointable"   : true,
@@ -13,8 +13,8 @@
   "templatePath"     : "wrapper.sh",
   "testPath"         : "wrapper.sh",
   "parallelism"      : "SERIAL",
-  "shortDescription" : "Test for fastq-dump",
-  "longDescription"  : "Test for fastq-dump",
+  "shortDescription" : "Newest(2.8.0) version of the SRA toolkit tool fastq-dump",
+  "longDescription"  : "Newest version of the SRA toolkit tool fastq-dump, 2.8.0. Input file is a .txt file with Sequence identifiers. One Sequence ID per line.",
   "helpURI"          : "https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=software",
   "datePublished"    : "16. December 2016",
   "author"           : "Annemarie Eckes",
@@ -26,8 +26,8 @@
   "inputs" : [ {
       "id": "input_1",
       "details" : {
-        "label": "file with list of SRA Sequence IDs",
-        "description": "list of SRA Sequence identifiers (SRR)"
+        "label": ".txt - file with list of SRA Sequence IDs",
+        "description": "list of SRA Sequence identifiers (SRR), one per line"
       },
       "value": {
         "required" : "true",
